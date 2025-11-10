@@ -42,8 +42,9 @@
                 <configuration>
                     <!-- Specify the test you want to run -->
                     <includes>
-                        <include>com/MainTest.java</include>
-                        <!-- <include>com/CoverageTest.java</include> -->
+                        <!-- Use a standard include pattern so Surefire finds tests reliably -->
+                        <include>**/*Test.java</include>
+                        <!-- You can add specific includes like <include>**/MainTest.java</include> if needed -->
                     </includes>
                 </configuration>
             </plugin>
