@@ -26,20 +26,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		Main calculator = new Main();
-		
-		// Test cases
-		System.out.println("Test Case 1 (5 + 5): " + calculator.add(5, 5));
-		System.out.println("Test Case 2 (Integer.MAX_VALUE + 1):");
-		try {
-			calculator.add(Integer.MAX_VALUE, 1);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		System.out.println("Test Case 3 (-1 + 5):");
-		try {
-			calculator.add(-1, 5);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+		// NOTE: The demo/test calls below were hard-coded examples used during development
+		// and may interfere with automated test runs or CI output. They are commented out
+		// to avoid side-effects when this class is executed in CI environments.
+		//
+		// System.out.println("Test Case 1 (5 + 5): " + calculator.add(5, 5));
+		// System.out.println("Test Case 2 (Integer.MAX_VALUE + 1):");
+		// try {
+		//     calculator.add(Integer.MAX_VALUE, 1);
+		// } catch (Exception e) {
+		//     System.out.println(e.getMessage());
+		// }
+		// System.out.println("Test Case 3 (-1 + 5):");
+		// try {
+		//     calculator.add(-1, 5);
+		// } catch (Exception e) {
+		//     System.out.println(e.getMessage());
+		// }
 	}
 }
